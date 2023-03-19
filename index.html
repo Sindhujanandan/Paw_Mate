@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawMate - Tinder for Dogs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica', sans-serif;
+        }
+    body {
+        background-color: #F2F2F2;
+    }
+
+    .header {
+        background-color: #333;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .headline {
+        font-size: 48px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .subheadline {
+        font-size: 24px;
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+    .button {
+        background-color: #007AFF;
+        color: #FFF;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #005FCC;
+    }
+
+    .dog-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 50px auto;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        PawMate
+    </div>
+  <div class="main">
+    <h1 class="headline">Find Your Dog's Perfect Playmate!</h1>
+    <h2 class="subheadline">Swipe right for a pawesome connection!</h2>
+    <button class="button" onclick="showDogImage()">Join PawMate Now</button>
+    <img class="dog-image" id="dog-image" src="" alt="Cute dog" style="display: none;">
+</div>
+
+<script>
+    function showDogImage() {
+        document.getElementById('dog-image').src = 'https://images.unsplash.com/photo-1561948955-570b270e7c36';
+        document.getElementById('dog-image').style.display = 'block';
+    }
+</script>
+</body>
+</html>
